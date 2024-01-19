@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.signUp::before {
+  content: "";
+  background: url("../image-logo/Netflix-signUp-Bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.signUp input {
+  background-color: rgba(70, 90, 126, 0.4);
+  color: white !important;
+}
+.recaptch-info {
+  margin-bottom: 4.5rem !important;
+}
+
+/* bg-e8f0ef */

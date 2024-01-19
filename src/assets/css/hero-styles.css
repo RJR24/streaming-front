@@ -1,0 +1,7 @@
+.hero-container {
+  height: 50rem !important;
+  background: url("../image-logo/money-heist02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
