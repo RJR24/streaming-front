@@ -1,7 +1,7 @@
 import React from "react";
 import MovieDataFetcher from "../dataFetching/MovieDataFetcher";
 
-const TvShows = () => {
+const Trending = () => {
   return (
     <MovieDataFetcher
       endpoint="
@@ -11,9 +11,9 @@ const TvShows = () => {
         imageUrl: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
         id: movie.id,
       })}
-      title="Tv Show"
+      title="Trending"
     />
   );
 };
 
-export default TvShows;
+export default Trending;

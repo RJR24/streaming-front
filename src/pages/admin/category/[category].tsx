@@ -50,7 +50,7 @@ const CategoryDetailsPage = () => {
   const categoryApiUrls = {
     popular: `${tmdbUrl}/movie/popular?api_key=${apiKey}`,
     top10MoviesUK: `${tmdbUrl}/movie/top_rated?api_key=${apiKey}`,
-    tvShow: `${tmdbUrl}/trending/all/day?api_key=${apiKey}`,
+    trending: `${tmdbUrl}/trending/all/day?api_key=${apiKey}`,
     upcomingMovies: `${tmdbUrl}/movie/upcoming?api_key=${apiKey}`,
   };
 
@@ -203,7 +203,7 @@ const CategoryDetailsPage = () => {
         >
           <option value="popular">Popular Movies</option>
           <option value="top10MoviesUK">Top 10 Movies (UK)</option>
-          <option value="tvShow">TvShow</option>
+          <option value="trending">Trending</option>
           <option value="upcomingMovies">Upcoming Movies</option>
         </select>
       </div>

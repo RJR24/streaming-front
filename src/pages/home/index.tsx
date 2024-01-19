@@ -7,7 +7,7 @@ import UserMyList from "../../components/userMyList/UserMyList";
 import Top10MoviesUK from "../../components/movieCategoriesCarousels/TopTenUk";
 import Upcoming from "../../components/movieCategoriesCarousels/UpcomingMovies";
 import PopularMovies from "../../components/movieCategoriesCarousels/PopularMovies";
-import TvShows from "../../components/movieCategoriesCarousels/TvShows";
+import Trending from "../../components/movieCategoriesCarousels/Trending";
 import Footer from "../../components/footer/Footer";
 
 const Home = () => {
@@ -32,7 +32,7 @@ const Home = () => {
         <PopularMovies />
         <UserMyList />
 
-        <TvShows />
+        <Trending />
 
         <Top10MoviesUK />
         <Upcoming />

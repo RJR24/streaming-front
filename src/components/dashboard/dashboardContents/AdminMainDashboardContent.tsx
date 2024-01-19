@@ -238,14 +238,14 @@ const AdminMainDashboardContent = () => {
                 <div className="flex flex-row items-center">
                   <div className="text-3xl p-4">📺</div>
                   <div className="p-2">
-                    <p className="text-xl font-bold">Tv Show on Netflix</p>
+                    <p className="text-xl font-bold">Trending</p>
                     <p className="text-gray-500 font-medium">Maia Kipper</p>
                     <p className="text-gray-500 text-sm">23 Nov 2022</p>
                   </div>
                 </div>
                 <div className="border-t border-white/5 p-4">
                   <Link
-                    href="/admin/category/tvShow"
+                    href="/admin/category/trending"
                   >
                     <div className="inline-flex space-x-2 items-center text-center cursor-pointer">
                       <svg
