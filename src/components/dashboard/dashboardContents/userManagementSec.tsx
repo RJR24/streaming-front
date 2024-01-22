@@ -57,7 +57,7 @@ const UsersManagement = () => {
         const authToken = localStorage.getItem("x-auth-token");
 
         // Make a request to logout endpoint
-        await axios.post("http://localhost:8000/auth/logout", null, {
+        await axios.post(`${process.env.NEXT_PUBLIC_API}/auth/logout`, null, {
           headers: {
             "x-auth-token": authToken,
           },
@@ -85,7 +85,7 @@ const UsersManagement = () => {
         }
 
         // Make a request to get user information, including isAdmin
-        const response = await axios.get("http://localhost:8000/profile", {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API}/profile`, {
           headers: {
             "x-auth-token": authToken,
           },
@@ -123,7 +123,7 @@ const UsersManagement = () => {
         return;
       }
 
-      const response = await axios.get("http://localhost:8000/api/usersList", {
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_API}/api/usersList`, {
         headers: {
           "x-auth-token": token,
         },
@@ -187,7 +187,7 @@ const UsersManagement = () => {
       console.log("Selected User ID:", userId);
 
       await axios.post(
-        `http://localhost:8000/api/suspendUser/${userId}`,
+        `${process.env.NEXT_PUBLIC_API}/api/suspendUser/${userId}`,
         {},
         {
           headers: {
@@ -215,7 +215,7 @@ const UsersManagement = () => {
       }
 
       await axios.post(
-        `http://localhost:8000/api/reactivateUser/${userId}`,
+        `${process.env.NEXT_PUBLIC_API}/api/reactivateUser/${userId}`,
         {},
         {
           headers: {

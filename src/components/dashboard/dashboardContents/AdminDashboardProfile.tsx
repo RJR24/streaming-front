@@ -37,7 +37,7 @@ const AdminDashboardProfile = () => {
         const authToken = localStorage.getItem("x-auth-token");
 
         // Make a request to logout endpoint
-        await axios.post("http://localhost:8000/auth/logout", null, {
+        await axios.post(`${process.env.NEXT_PUBLIC_API}/auth/logout`, null, {
           headers: {
             "x-auth-token": authToken,
           },
@@ -68,7 +68,7 @@ const AdminDashboardProfile = () => {
         }
 
         // Make a request to get user information, including isAdmin
-        const response = await axios.get("http://localhost:8000/profile", {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API}/profile`, {
           headers: {
             "x-auth-token": authToken,
           },
