@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-import "../../../assets/css/dashboard-styles.css";
+
 
 import Swal from "sweetalert2";
 import axios from "axios";
