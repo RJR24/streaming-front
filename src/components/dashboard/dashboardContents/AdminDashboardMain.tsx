@@ -43,7 +43,7 @@ const AdminDashboardMain = () => {
         const authToken = localStorage.getItem("x-auth-token");
 
         // Make a request to logout endpoint
-        await axios.post(`${apiKey}/auth/logout`, null, {
+        await axios.post(`${process.env.NEXT_PUBLIC_API}/auth/logout`, null, {
           headers: {
             "x-auth-token": authToken,
           },
@@ -61,7 +61,6 @@ const AdminDashboardMain = () => {
     const checkUserRole = async () => {
       try {
         const authToken = localStorage.getItem("x-auth-token");
-    if(authToken) {console.log("token available:", authToken)}
         if (!authToken) {
           // Token is not provided, redirect to login
           console.log("no auth token available")
@@ -70,7 +69,7 @@ const AdminDashboardMain = () => {
         }
 
         // Make a request to get user information, including isAdmin
-        const response = await axios.get(`${apiKey}/profile`, {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API}/profile`, {
           headers: {
             "x-auth-token": authToken,
           },
@@ -86,7 +85,7 @@ const AdminDashboardMain = () => {
         setUserName(user.name);
         setEmail(user.email);
       } catch (error) {
-        console.error("Error checking user role:", error);
+        console.error("Error checking user role:", error.response.data);
 
         // Token is not valid, redirect to login
         router.push("/login");
