@@ -467,7 +467,7 @@ const AdminDashboardProfile = () => {
                 {showUserInfoModal && (
                   <UserInfoModal
                     onClose={() => setShowUserInfoModal(false)}
-                    user={{}}
+                    user={{ name: userName, dateOfBirth: null, phoneNumber: null, address: null }}
                     userId={userId}
                   />
                 )}
