@@ -17,6 +17,21 @@ interface CarouselProps {
   items: any[];
 }
 
+const getLanguageName = (code) => {
+  const languageMap = {
+    en: "English",
+    es: "Spanish",
+    ja: "Japanese",
+    hi: "Hindi",
+    ko: "Korean",
+    it: "Italian",
+    fr: "French",
+    // Add more language codes and names as needed
+  };
+
+  return languageMap[code] || code; // Return the language name or the original code if not found
+};
+
 const MovieCarousel: React.FC<CarouselProps> = ({ title, items = [] }) => {
   const [hoveredMovie, setHoveredMovie] = useState<MovieItem | null>(null);
 
@@ -73,7 +88,7 @@ const MovieCarousel: React.FC<CarouselProps> = ({ title, items = [] }) => {
                   style={{ top: "-10px" }}
                 >
                   <p>{movie.title}</p>
-                  <p>{`Language: ${movie.originalLanguage}`}</p>
+                  <p>{`Language: ${getLanguageName(movie.originalLanguage)}`}</p>
                   <p>{`Rating: ${movie.voteAverage}⭐`}</p>
                 </div>
               )}
