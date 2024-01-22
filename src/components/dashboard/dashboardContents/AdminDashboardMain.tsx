@@ -61,8 +61,7 @@ const AdminDashboardMain = () => {
     const checkUserRole = async () => {
       try {
         const authToken = localStorage.getItem("x-auth-token");
-          console.log("no auth token available")
-if(authToken) {console.log("token available")}
+    if(authToken) {console.log("token available:", authToken)}
         if (!authToken) {
           // Token is not provided, redirect to login
           console.log("no auth token available")
