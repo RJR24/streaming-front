@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { MovieDetails } from "../../../types";
 const api_key = process.env.NEXT_PUBLIC__API_KEY;
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_TMDB_URL;
 
 export const fetchMovieDetails = async (
   id: string

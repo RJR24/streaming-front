@@ -13,7 +13,7 @@ import axios from "axios";
 
 
 const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-const tmdbUrl = process.env.NEXT_PUBLIC_API_URL;
+const tmdbUrl = process.env.NEXT_PUBLIC_API_TMDB_URL;
 
 
 interface User {

@@ -15,7 +15,7 @@ import AddCategoryModal from "../../AddCategoryModal";
 import RemoveCategoryModal from "../../RemoveCategoryModal";
 
 const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-const tmdbUrl = process.env.NEXT_PUBLIC_API_URL;
+const tmdbUrl = process.env.NEXT_PUBLIC_API_TMDB_URL;
 
 const AdminDashboardMain = () => {
   const [userName, setUserName] = useState("");
@@ -43,7 +43,7 @@ const AdminDashboardMain = () => {
         const authToken = localStorage.getItem("x-auth-token");
 
         // Make a request to logout endpoint
-        await axios.post(`apiKey/auth/logout`, null, {
+        await axios.post(`${apiKey}/auth/logout`, null, {
           headers: {
             "x-auth-token": authToken,
           },
@@ -69,7 +69,7 @@ const AdminDashboardMain = () => {
         }
 
         // Make a request to get user information, including isAdmin
-        const response = await axios.get(`apiKey/profile`, {
+        const response = await axios.get(`${apiKey}/profile`, {
           headers: {
             "x-auth-token": authToken,
           },

@@ -26,7 +26,7 @@ const AdminMainDashboardContent = () => {
   };
 
   const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-  const tmdbUrl = process.env.NEXT_PUBLIC_API_URL;
+  const tmdbUrl = process.env.NEXT_PUBLIC_API_TMDB_URL;
 
   return (
     <div id="content" className="bg-white/10 col-span-9 rounded-lg p-6">

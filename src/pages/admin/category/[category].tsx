@@ -45,7 +45,7 @@ const CategoryDetailsPage = () => {
     return <div>Loading...</div>;
   }
   const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-  const tmdbUrl = process.env.NEXT_PUBLIC_API_URL;
+  const tmdbUrl = process.env.NEXT_PUBLIC_API_TMDB_URL;
 
   const categoryApiUrls = {
     popular: `${tmdbUrl}/movie/popular?api_key=${apiKey}`,

@@ -27,7 +27,7 @@ interface Video {
     videos: { name: string; key: string; results: Video[] };
   }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_TMDB_URL;
 
 const MovieDetailsPage: React.FC = () => {
   const [movieDetails, setMovieDetails] = useState<MovieDetails | null>(null);
