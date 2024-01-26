@@ -161,7 +161,7 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          <div className="menu ml-5">
+          <div className="menu ml-5 flex align-items-center ">
             <button
               data-collapse-toggle="mobile-menu"
               type="button"
