@@ -6,3 +6,11 @@
 .navbar-right > div {
   cursor: pointer;
 }
+@media (max-width: 859px) {
+  .navbar-desktop-view {
+    display: none !important;
+  }
+  .navbar-mobile-view {
+    display: block !important;
+  }
+}
