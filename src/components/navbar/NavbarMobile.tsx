@@ -35,7 +35,7 @@ const NavbarMobile = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="px-36 rounded-md py-2 font-normal text-base hover:bg-gray-900 text-slate-300 hover:text-white"
+        className="px-36 rounded-md py-2 font-normal text-base hover:scale-x-105 hover:bg-gray-900 text-slate-300 hover:text-white"
       >
         <a href="#" className="flex items-center">
           Home
@@ -45,7 +45,7 @@ const NavbarMobile = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="px-36 rounded-md py-2 font-normal text-base hover:bg-gray-900 text-slate-300 hover:text-white"
+        className="px-36 rounded-md py-2 font-normal text-base hover:scale-x-105 hover:bg-gray-900 text-slate-300 hover:text-white"
       >
         <a href="#" className="flex items-center whitespace-nowrap">
           Tv shows
@@ -55,7 +55,7 @@ const NavbarMobile = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="px-36 rounded-md py-2 font-normal text-base hover:bg-gray-900 text-slate-300 hover:text-white"
+        className="px-36 rounded-md py-2 font-normal text-base hover:scale-x-105 hover:bg-gray-900 text-slate-300 hover:text-white"
       >
         <a href="#" className="flex items-center">
           Movies
@@ -65,7 +65,7 @@ const NavbarMobile = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="px-36 rounded-md py-2 font-normal text-base hover:bg-gray-900 text-slate-300 hover:text-white"
+        className="px-36 rounded-md py-2 font-normal text-base hover:scale-x-105 hover:bg-gray-900 text-slate-300 hover:text-white"
       >
         <a href="#" className="flex items-center">
           Popular
@@ -75,7 +75,7 @@ const NavbarMobile = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="px-36 rounded-md py-2 font-normal text-base  hover:bg-gray-900"
+        className="px-36 rounded-md py-2 font-normal text-base hover:scale-x-105 hover:bg-gray-900"
       >
         <a href="#" className="flex items-center whitespace-nowrap">
           My list
