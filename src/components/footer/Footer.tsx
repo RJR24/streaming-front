@@ -32,7 +32,9 @@ const Footer = () => {
   return (
     <footer className="relative w-full bg-neutral-900">
       <div className="mx-auto w-3/2 max-w-7xl px-8">
-      <div className=" ml-8 text-zinc-500 cursor-pointer hover:text-zinc-400">Questions? Call 1-844-505-2993</div>
+        <div className=" ml-8 py-5 text-zinc-500 cursor-pointer hover:text-zinc-400">
+          Questions? Call 1-844-505-2993
+        </div>
         <div className="mx-auto grid w-full grid-cols-2 gap-8 py-12 md:grid-cols-4 lg:grid-cols-4">
           {SITEMAP.map(({ title, links }, key) => (
             <div key={key} className="w-full flex-col items-start ">
