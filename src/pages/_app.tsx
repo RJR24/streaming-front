@@ -6,9 +6,15 @@ import "../assets/css/login-styles.css";
 import "../assets/css/navbar-styles.css";
 import "../assets/css/signup-styles.css";
 import "../assets/css/hero-styles.css";
+import Footer from "../components/footer/Footer";
 
 const App = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+  return(
+    <>
+     <Component {...pageProps} />
+     <Footer />
+    </>
+  );
 };
 
 export default App;
