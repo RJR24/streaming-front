@@ -91,7 +91,7 @@ const NavbarMobile = () => {
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
+            className=" mr-2 sm:mr-4 cursor-pointer py-1.5 font-medium"
           >
             <Image src={NetflixLogo} alt="Netflix Logo" className=" " />
           </Typography>
