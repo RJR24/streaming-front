@@ -47,7 +47,7 @@ const NavbarMobile = () => {
         color="blue-gray"
         className="px-36 rounded-md py-2 font-normal text-base hover:bg-gray-900 text-slate-300 hover:text-white"
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center whitespace-nowrap">
           Tv shows
         </a>
       </Typography>
@@ -77,7 +77,7 @@ const NavbarMobile = () => {
         color="blue-gray"
         className="px-36 rounded-md py-2 font-normal text-base  hover:bg-gray-900"
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center whitespace-nowrap">
           My list
         </a>
       </Typography>
