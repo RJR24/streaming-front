@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import ProfilePictureUpload from "./ProfilePictureUpload";
 import UserPersonalInfo from "./userPersonalInfo";
 import UserInfoModal from "../../../UserInfoModal";
 import axios from "axios";
