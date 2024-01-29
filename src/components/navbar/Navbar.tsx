@@ -11,6 +11,7 @@ import profileAvatar from "../../assets/image-logo/ProfileIMG.svg";
 
 import Script from "next/script";
 import NavbarMobile from "./NavbarMobile";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [isUserDropdownVisible, setIsUserDropdownVisible] = useState(false);
@@ -32,45 +33,45 @@ const Navbar: React.FC = () => {
             >
               <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium text-slate-100">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/home"
                     className="bg-blue-700 md:bg-transparent block pl-3 pr-4 py-2 text-gray-500 md:hover:text-gray-400 md:p-0 rounded focus:outline-none"
                     aria-current="page"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-500 whitespace-nowrap hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-400 md:p-0"
                   >
                     TV Shows
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-500 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-400 md:p-0"
                   >
                     Movies
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-500 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-400 md:p-0"
                   >
                     Popular
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-500 whitespace-nowrap hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-400 md:p-0"
                   >
                     My List
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
