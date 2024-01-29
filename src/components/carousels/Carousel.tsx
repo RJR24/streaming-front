@@ -69,7 +69,7 @@ const MovieCarousel: React.FC<CarouselProps> = ({ title, items = [] }) => {
             className="mx-2 relative group"
           >
             <div
-              className="relative"
+              className="relative mx-1"
               onMouseEnter={() => handleMouseEnter(movie)}
               onMouseLeave={handleMouseLeave}
             >
