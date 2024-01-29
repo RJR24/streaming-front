@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
-import ProfileContent from "./dashboardContents/profileContent/ProfileContent";
+import ProfileContent from "./dashboardContents/profileContent/UserProfile";
 import UsersManagement from "./dashboardContents/UsersManagement";
 import axios from "axios";
 import { useRouter } from "next/router";

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import ProfileContent from "./dashboardContents/profileContent/ProfileContent";
+import ProfileContent from "./dashboardContents/profileContent/UserProfile";
 import axios from "axios";
 import { useRouter } from "next/router";
 import UserMainDashboardContent from "./dashboardContents/UserMainDashboardContent";
@@ -121,7 +121,7 @@ const UserDashboard = () => {
               </h1>
               <p className="text-slate-400 text-sm mb-2">Welcome</p>
               <Link
-                href="#"
+                href="/dashboard"
                 className="flex flex-col space-y-2 md:space-y-0 md:flex-row mb-5 items-center md:space-x-2 hover:bg-white/10 group transition duration-150 ease-linear rounded-lg group w-full py-3 px-2"
               >
                 <div>
@@ -143,7 +143,6 @@ const UserDashboard = () => {
                 <Link
                   href="/home"
                   className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
-                  onClick={() => handleMenuClick("dashboard")}
                 >
                   <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 space-x-2 items-center">
                     <div>
@@ -173,9 +172,8 @@ const UserDashboard = () => {
                   </div>
                 </Link>
                 <Link
-                  href="#"
+                  href="/userDashboard"
                   className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
-                  onClick={() => handleMenuClick("dashboard")}
                 >
                   <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 space-x-2 items-center">
                     <div>
@@ -205,9 +203,8 @@ const UserDashboard = () => {
                   </div>
                 </Link>
                 <Link
-                  href="#"
+                  href="/userDashboard/UserProfile"
                   className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
-                  onClick={() => handleMenuClick("profile")}
                 >
                   <div className="relative flex flex-col space-y-2 md:flex-row md:space-y-0 space-x-2 items-center">
                     <div>
