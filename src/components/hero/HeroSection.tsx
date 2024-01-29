@@ -22,7 +22,7 @@ const HeroSection = () => {
           plan. Tokyo inspired a cast full of city names.
         </div>
         <div className="play-info flex items-center gap-4 mt-4">
-          <div className="flex bg-white cursor-pointer rounded bg-opacity-90 hover:bg-opacity-100 justify-center items-center gap-2 md:gap-4 px-2 md:px-6 py-2 md:py-4 text-neutral-900 font-medium font-['Netflix Sans'] text-sm md:text-lg">
+          <div className="flex bg-white cursor-pointer rounded bg-opacity-90 hover:bg-opacity-100 justify-center items-center gap-2 md:gap-4 px-4 py-2 md:px-6  md:py-4 text-neutral-900 font-medium font-['Netflix Sans'] text-sm md:text-lg">
             <Image src={play} alt="play sign" width={32} />
             <button>Play</button>
           </div>
