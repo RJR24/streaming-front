@@ -32,7 +32,7 @@ const Footer = () => {
   return (
     <footer className="relative w-full bg-neutral-900">
       <div className="mx-auto w-3/2 max-w-7xl px-8">
-        <div className=" ml-8 py-5 text-zinc-500 cursor-pointer hover:text-zinc-400">
+        <div className=" ml-8 pt-7 text-zinc-400 cursor-pointer hover:text-zinc-300">
           Questions? Call 1-844-505-2993
         </div>
         <div className="mx-auto grid w-full grid-cols-2 gap-8 py-12 md:grid-cols-4 lg:grid-cols-4">
@@ -41,7 +41,7 @@ const Footer = () => {
               <Typography
                 variant="small"
                 color="blue-gray"
-                className="mb-4 font-medium ml-8 whitespace-nowrap text-zinc-500"
+                className="mb-4 font-medium ml-8 whitespace-nowrap text-zinc-400"
               >
                 {title}
               </Typography>
@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="flex w-full flex-col items-center justify-center border-t border-zinc-700 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
-            className="mb-4 text-center font-normal text-zinc-600 md:mb-0"
+            className="mb-4 text-center font-normal text-zinc-500 md:mb-0"
           >
             &copy; {currentYear}{" "}
             <a href="https://material-tailwind.com/">Designed by Kaveh</a>. All
@@ -81,7 +81,7 @@ const Footer = () => {
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5 hover:fill-amber-100"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -99,7 +99,7 @@ const Footer = () => {
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5 hover:fill-amber-100"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -117,7 +117,7 @@ const Footer = () => {
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5 hover:fill-amber-100"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -131,7 +131,7 @@ const Footer = () => {
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5 hover:fill-amber-100"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -149,7 +149,7 @@ const Footer = () => {
               className="opacity-80 transition-opacity hover:opacity-100"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5 hover:fill-amber-100"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
