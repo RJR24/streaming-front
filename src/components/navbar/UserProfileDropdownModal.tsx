@@ -98,12 +98,21 @@ const UserProfileDropdownModal: React.FC<UserDropdownModalProps> = ({
       </div>
       <ul className="py-2 text-sm" aria-labelledby="dropdownInformationButton">
         <li>
-          <Link
-            href="/admin/main"
-            className="block px-5 py-2 hover:bg-gray-700"
-          >
-            Dashboard
-          </Link>
+          {isAdmin ? (
+            <Link
+              href="/admin/main"
+              className="block px-5 py-2 hover:bg-gray-700"
+            >
+              Dashboard
+            </Link>
+          ) : (
+            <Link
+              href="/dashboard"
+              className="block px-5 py-2 hover:bg-gray-700"
+            >
+              Dashboard
+            </Link>
+          )}
         </li>
 
         <li>
