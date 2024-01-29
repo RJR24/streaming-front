@@ -1,5 +1,5 @@
 import React from "react";
-import AdminDashboardProfile from "../../components/dashboard/dashboardContents/AdminDashboardProfile";
+import AdminDashboardProfile from "../../components/dashboard/dashboardContents/profileContent/admin/AdminDashboardProfile";
 
 function profile() {
   return (

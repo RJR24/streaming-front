@@ -1,5 +1,5 @@
 import React from "react";
-import UsersManagement from "../../components/dashboard/dashboardContents/userManagementSec";
+import UsersManagement from "../../components/dashboard/dashboardContents/profileContent/admin/UserManagement";
 
 const usersManagement = () => {
   return (
