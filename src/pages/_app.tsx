@@ -7,10 +7,12 @@ import "../assets/css/navbar-styles.css";
 import "../assets/css/signup-styles.css";
 import "../assets/css/hero-styles.css";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
 
 const App = ({ Component, pageProps }) => {
   return(
     <>
+    <Navbar />
      <Component {...pageProps} />
      <Footer />
     </>
