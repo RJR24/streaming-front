@@ -189,7 +189,7 @@ const CategoryDetailsPage = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen p-8">
+    <div className=" px-36 py-10 bg-neutral-900 text-white min-h-screen ">
       <Head>
         <title>{`${selectedCategory} Details`}</title>
       </Head>
@@ -217,12 +217,12 @@ const CategoryDetailsPage = () => {
       >
         {(data) => (
           <table className="w-full whitespace-nowrap">
-            <thead className="bg-black/60">
+            <thead className="bg-black/30">
               <tr>
                 <th className="text-left py-3 px-2 rounded-l-lg">Image</th>
                 <th className="text-left py-3 px-2">Title</th>
                 <th className="text-left py-3 px-2">Id</th>
-                <th className="text-left py-3 px-2 rounded-r-lg">Actions</th>
+                <th className="text-center py-3 px-2 rounded-r-lg">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -302,8 +302,8 @@ const CategoryDetailsPage = () => {
                     </div>
                   </td>
                   <td className="py-3 px-2">{movie.title}</td>
-                  <td className="py-3 px-2">{movie.id}</td>
-                  <td className="py-3 px-2">
+                  <td className="py-3 px-2 text-neutral-100 ">{movie.id}</td>
+                  <td className=" flex justify-center py-3 px-2">
                     <div className="inline-flex items-center space-x-3">
                       <a href="" title="Edit" className="hover:text-blue-500">
                         {/* Edit icon */}
@@ -326,7 +326,7 @@ const CategoryDetailsPage = () => {
                       <a
                         title="Remove"
                         onClick={() => handleRemoveMovie(movie.id)}
-                        className="hover:text-red-500"
+                        className="hover:text-red-500 cursor-pointer"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
