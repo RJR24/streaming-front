@@ -107,7 +107,7 @@ const UserProfileDropdownModal: React.FC<UserDropdownModalProps> = ({
             </Link>
           ) : (
             <Link
-              href="/dashboard"
+              href="/userDashboard"
               className="block px-5 py-2 hover:bg-gray-700"
             >
               Dashboard
