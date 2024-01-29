@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 
-import Header from "../../components/navbar/Navbar";
 import HeroSection from "../../components/hero/HeroSection";
 import Carousel from "../../components/carousels/Carousel";
 import UserMyList from "../../components/userMyList/UserMyList";
@@ -25,7 +24,7 @@ const Home = () => {
   return (
     <>
       <div className="container-all bg-neutral-900">
-        <Header />
+        
         <HeroSection />
 
         <PopularMovies />
