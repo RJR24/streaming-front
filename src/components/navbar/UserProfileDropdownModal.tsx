@@ -100,7 +100,7 @@ const UserProfileDropdownModal: React.FC<UserDropdownModalProps> = ({
         <li>
           {isAdmin ? (
             <Link
-              href="/admin/main"
+              href="/admin/categories"
               className="block px-5 py-2 hover:bg-gray-700"
             >
               Dashboard
