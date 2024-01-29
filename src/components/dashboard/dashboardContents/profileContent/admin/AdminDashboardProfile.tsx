@@ -4,11 +4,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-
 import Swal from "sweetalert2";
 import axios from "axios";
 
-import UserInfoModal from "../../UserInfoModal";
+import UserInfoModal from "../../../../UserInfoModal";
 
 const AdminDashboardProfile = () => {
   const [showUserInfoModal, setShowUserInfoModal] = useState(false);
@@ -68,11 +67,14 @@ const AdminDashboardProfile = () => {
         }
 
         // Make a request to get user information, including isAdmin
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_API}/profile`, {
-          headers: {
-            "x-auth-token": authToken,
-          },
-        });
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_API}/profile`,
+          {
+            headers: {
+              "x-auth-token": authToken,
+            },
+          }
+        );
 
         const user = response.data.data;
         console.log(
@@ -466,7 +468,12 @@ const AdminDashboardProfile = () => {
                 {showUserInfoModal && (
                   <UserInfoModal
                     onClose={() => setShowUserInfoModal(false)}
-                    user={{ name: userName, dateOfBirth: null, phoneNumber: null, address: null }}
+                    user={{
+                      name: userName,
+                      dateOfBirth: null,
+                      phoneNumber: null,
+                      address: null,
+                    }}
                     userId={userId}
                   />
                 )}
