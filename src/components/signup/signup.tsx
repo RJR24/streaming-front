@@ -178,7 +178,7 @@ const SignUp = () => {
               </button>
             </form>
 
-            <p className="text-sm font-light text-gray-700 dark:text-gray-400">
+            <p className="text-sm font-light text-gray-300 dark:text-gray-400">
               Already have an account?{" "}
               <Link
                 href="/login"
