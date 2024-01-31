@@ -393,18 +393,17 @@ const AdminDashboardProfile = () => {
                         className="flex space-x-2 items-center text-center"
                       >
                         <Link
-                          href={"/passwordReset"}
-                          // Handle  ResetPassword
+                        // Handle  ResetPassword
+                          href="/resetPassword"
                           className="hover:text-indigo-400"
                         >
                           password
                         </Link>
 
                         <Link
-                          href={"/emailChange"}
                           // Handle click to show ResetPassword
+                          href="/changeEmail"
                           className="hover:text-indigo-400"
-                          // onClick={handleChangeEmailClick}
                         >
                           email
                         </Link>
