@@ -5,8 +5,8 @@ import netflixLogo from "../../assets/image-logo/Netflix-logo.svg";
 
 const SignInSignUpHeader = () => {
   return (
-    <div className=" flex justify-center ">
-    <div className="netflix-logo w-2/3 px-12 py-6">
+    <div className=" flex justify-between  ">
+    <div className="netflix-logo  px-12 py-6">
       <Image src={netflixLogo} alt="netflix logo"></Image>
     </div>
     </div>

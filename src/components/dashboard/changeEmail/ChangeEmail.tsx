@@ -63,11 +63,11 @@ const ChangeEmail = () => {
 
   return (
     <section className="">
-      <div className="login flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <div className="change-password-email flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div className="w-full bg-black opacity-70 text-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-600 dark:border-gray-700">
           <div className="px-12 py-[4.25rem] space-y-4 md:space-y-6 ">
             <h1 className="text-xl font-bold leading-tight tracking-tight  md:text-2xl dark:text-white">
-              Change Email
+              Email Change
             </h1>
             <form
               className=" form-styles space-y-4"
