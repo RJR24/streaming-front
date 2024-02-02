@@ -1,20 +1,20 @@
 body {
   background-color: black;
-  background: url("../image-logo/Netflix-signUp-Bg.png");
   width: 100%;
   height: 100%;
-  /* color: white; */
+  color: white;
+  background: url("../image-logo/Netflix-signUp-Bg.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .signUp::before {
-  /* content: ""; */
-  /* background: url("../image-logo/Netflix-signUp-Bg.png"); */
-  /* background-repeat: no-repeat; */
-  /* height: 100%; */
-  /* width: 100%; */
-  /* opacity: 0.3; */
+  content: "";
+  height: 100%;
+  width: 100%;
   position: absolute;
-  /* z-index: -1; */
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0.63;
+  z-index: -1;
 }
 
 .signUp input {
