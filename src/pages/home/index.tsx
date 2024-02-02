@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container-all bg-neutral-900">
+      <div className="bg-neutral-900 min-h-full">
         
         <HeroSection />
 

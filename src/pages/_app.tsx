@@ -11,6 +11,8 @@ import "../assets/css/login-styles.css";
 import "../assets/css/navbar-styles.css";
 import "../assets/css/signup-styles.css";
 import "../assets/css/hero-styles.css";
+import "../assets/css/SignInSignUpHeaderStyles.css";
+
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
