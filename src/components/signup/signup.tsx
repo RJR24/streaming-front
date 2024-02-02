@@ -79,12 +79,12 @@ const SignUp = () => {
   };
 
   return (
-    <section className=" ">
+    <>
       <SignInSignUpHeader />
 
-      <div className="signUp flex flex-col items-center justify-center px-6 py-8 mx-auto ">
+      <div className="signUp flex items-center justify-center px-6 py-8 ">
         <div className="w-full rounded-lg md:mt-0 sm:max-w-md xl:p-0">
-          <div className=" bg-black opacity-70 px-16 py-14 space-y-4 md:space-y-6 ">
+          <div className=" bg-black opacity-75 px-16 py-14 space-y-4 md:space-y-6 ">
             <h1 className="text-xl font-bold leading-tight tracking-tight  md:text-2xl text-white">
               Sign up
             </h1>
@@ -202,7 +202,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 
