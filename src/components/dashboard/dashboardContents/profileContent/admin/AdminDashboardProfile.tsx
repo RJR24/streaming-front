@@ -384,30 +384,26 @@ const AdminDashboardProfile = () => {
                           Change Email and Password
                         </p>
                         <p className="text-gray-500 font-medium">last change</p>
-                        <p className="text-gray-500 text-sm">23 Nov 2022</p>
+                        <p className="text-gray-500 text-sm">12 Jan 2024</p>
                       </div>
                     </div>
-                    <div className="border-t border-white/5 p-4">
-                      <a
-                        href="#"
-                        className="flex space-x-2 items-center text-center"
-                      >
-                        <Link
-                        // Handle  ResetPassword
-                          href="/resetPassword"
-                          className="hover:text-indigo-400"
-                        >
-                          password
-                        </Link>
 
-                        <Link
-                          // Handle click to show ResetPassword
-                          href="/changeEmail"
-                          className="hover:text-indigo-400"
-                        >
-                          email
-                        </Link>
-                      </a>
+                    <div className="flex  gap-14 border-t border-white/5 p-4 ">
+                      <Link
+                        // show reset password page
+                        href="/resetPassword"
+                        className="hover:text-indigo-400"
+                      >
+                        password
+                      </Link>
+
+                      <Link
+                        // show email change page
+                        href="/changeEmail"
+                        className="hover:text-indigo-400"
+                      >
+                        email
+                      </Link>
                     </div>
                   </div>
 
@@ -430,10 +426,8 @@ const AdminDashboardProfile = () => {
                         <p className="text-xl font-bold">
                           Personal Information
                         </p>
-                        <p className="text-gray-500 font-medium">
-                          Oprah Milles
-                        </p>
-                        <p className="text-gray-500 text-sm">23 Nov 2022</p>
+                        <p className="text-gray-500 font-medium">{userName}</p>
+                        <p className="text-gray-500 text-sm">23 Nov 2023</p>
                       </div>
                     </div>
                     <div className="border-t border-white/5 p-4">

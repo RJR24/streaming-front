@@ -82,7 +82,7 @@ const Login = () => {
 
   return (
     <>
-      <SignInSignUpHeader />
+      <SignInSignUpHeader isLoginPage={true} />
 
       <div className="login flex items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div className="w-full bg-black opacity-75 text-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-600 dark:border-gray-700">
@@ -173,7 +173,7 @@ const Login = () => {
               </Link>
             </p>
 
-            <p className=" recaptcha-info text-xs font-light dark:text-gray-400 ">
+            <p className="loginRecaptcha-info text-xs font-light dark:text-gray-400 ">
               Sign-in is protected by Google reCAPTCHA to ensure you’re not a
               bot.{" "}
               <span
