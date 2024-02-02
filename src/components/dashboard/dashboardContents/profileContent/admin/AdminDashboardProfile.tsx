@@ -388,7 +388,7 @@ const AdminDashboardProfile = () => {
                       </div>
                     </div>
 
-                    <div className="flex  gap-14 border-t border-white/5 p-4 ">
+                    <div className="flex  gap-10 border-t border-white/5 p-4 ">
                       <Link
                         // show reset password page
                         href="/resetPassword"
