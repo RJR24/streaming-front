@@ -59,43 +59,49 @@ const MovieCarousel: React.FC<CarouselProps> = ({ title, items = [] }) => {
   };
 
   return (
-    <div className="my-8 p-2 relative">
-      <h2 className="text-2xl text-neutral-200 ml-2 font-bold mb-4">{title}</h2>
-      <Carousel responsive={responsive} infinite itemClass="carousel-item">
-        {items.map((movie, index) => (
-          <Link
-            href={`/movies/${movie.id}`}
-            key={index}
-            className="mx-2 relative group"
-          >
-            <div
-              className="relative mx-1"
-              onMouseEnter={() => handleMouseEnter(movie)}
-              onMouseLeave={handleMouseLeave}
+    <div className=" pb-8">
+      <div className="my-8 p-2 relative">
+        <h2 className="text-2xl text-neutral-200 ml-2 font-bold mb-4">
+          {title}
+        </h2>
+        <Carousel responsive={responsive} infinite itemClass="carousel-item">
+          {items.map((movie, index) => (
+            <Link
+              href={`/movies/${movie.id}`}
+              key={index}
+              className="mx-2 relative group"
             >
-              <Image
-                src={movie.imageUrl}
-                alt={movie.title}
-                width={285}
-                height={160}
-                className="rounded-md transition-transform transform group-hover:scale-105"
-              />
-              {hoveredMovie && hoveredMovie.id === movie.id && (
-                <div
-                  id={`tooltip-${movie.id}`}
-                  role="tooltip"
-                  className="absolute opacity-70 z-10 inline-block p-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow tooltip dark:bg-gray-700"
-                  style={{ top: "-10px" }}
-                >
-                  <p>{movie.title}</p>
-                  <p>{`Language: ${getLanguageName(movie.originalLanguage)}`}</p>
-                  <p>{`Rating: ${movie.voteAverage}⭐`}</p>
-                </div>
-              )}
-            </div>
-          </Link>
-        ))}
-      </Carousel>
+              <div
+                className="relative mx-1"
+                onMouseEnter={() => handleMouseEnter(movie)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <Image
+                  src={movie.imageUrl}
+                  alt={movie.title}
+                  width={285}
+                  height={160}
+                  className="rounded-md transition-transform transform group-hover:scale-105"
+                />
+                {hoveredMovie && hoveredMovie.id === movie.id && (
+                  <div
+                    id={`tooltip-${movie.id}`}
+                    role="tooltip"
+                    className="absolute opacity-70 z-10 inline-block p-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow tooltip dark:bg-gray-700"
+                    style={{ top: "-10px" }}
+                  >
+                    <p>{movie.title}</p>
+                    <p>{`Language: ${getLanguageName(
+                      movie.originalLanguage
+                    )}`}</p>
+                    <p>{`Rating: ${movie.voteAverage}⭐`}</p>
+                  </div>
+                )}
+              </div>
+            </Link>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };
