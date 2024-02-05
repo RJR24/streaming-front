@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Netflix Clone Project
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This full-stack project is a Netflix clone developed with the aim of showcasing my skills in web development. It includes features like user authentication, movie categorization, user profiles, and admin functionalities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Frontend
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Tech Stack:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  - Next.js
+  - TypeScript
+  - Tailwind CSS
+  - material-tailwind
+  - CSS
+  - sharp
+  - Axios
+  - Formik
+  - React Multi Carousel
+  - React YouTube
+  - SweetAlert2
+  - Yup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Project Features:**
+  - User authentication (login, signup, logout)
+  - User dashboard with profile updates
+  - Ability to add favorite movies to "MyList"
+  - Admin dashboard with category management and user actions
+  - Movie tooltips on hover
+  - Integration with TMDB API for movie data
+  - Reset password and change email pages for future server-side functionality
 
-## Learn More
+### Backend
 
-To learn more about Next.js, take a look at the following resources:
+- **Tech Stack:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - TypeScript
+  - Node.js
+  - Express.js
+  - MongoDB (Mongoose)
+  - Bcrypt for password hashing
+  - JSON Web Token (JWT) for authentication
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Project Features:**
+  - API for user and admin actions (adding movies, updating profiles, category management)
+  - Secure authentication using JWT
+  - MongoDB for database management
 
-## Deploy on Vercel
+## Setup Instructions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository.
+2. Navigate to the 'front' directory.
+3. Run `npm install` to install dependencies.
+4. Use `npm run dev` to start the development server.
+
+### Backend
+
+1. Navigate to the 'server' directory.
+2. Run `npm install` to install dependencies.
+3. Use `npm start` to run the server.
+4. Ensure MongoDB is set up and accessible.
+
+## Demo
+
+Explore the live demo [https://streaming-front-nine.vercel.app].
