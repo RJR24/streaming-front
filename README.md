@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This full-stack project is a Netflix clone developed with the aim of showcasing my skills in web development. It includes features like user authentication, movie categorization, user profiles, and admin functionalities.
+This full-stack project is a Netflix clone. It includes features like user authentication, movie categorization, user profiles, and admin functionalities.
 
 ### Frontend
 
