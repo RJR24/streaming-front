@@ -6,6 +6,7 @@ import {
   Button,
   IconButton,
   Card,
+  Collapse,
 } from "@material-tailwind/react";
 
 import Image from "next/image";
@@ -193,7 +194,7 @@ const NavbarMobile = () => {
             </div>
           </div>
         </div>
-        <MobileNav open={openNav}>{navList}</MobileNav>
+        <Collapse open={openNav}>{navList}</Collapse>
       </Navbar>
     </div>
   );
