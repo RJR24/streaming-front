@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect, useState } from "react";
 
 import axios from "axios";
@@ -16,19 +13,11 @@ const UserProfile = () => {
   const [email, setEmail] = useState("");
   const router = useRouter();
 
-
-
-  
   const [userId, setUserId] = useState<string>("");
 
   const [userEmail, setUserEmail] = useState<string>("");
   const [editMode, setEditMode] = useState(false);
   const [showUserInfoModal, setShowUserInfoModal] = useState(false);
-
-
-
-
-
 
   const handleLogout = async () => {
     try {
@@ -62,9 +51,6 @@ const UserProfile = () => {
       console.error("Logout failed", error);
     }
   };
-
-
- 
 
   const handleEditClick = () => {
     // Toggle edit mode
@@ -117,13 +103,6 @@ const UserProfile = () => {
 
     fetchUserData();
   }, [router]);
-
-
-
-
-
-
-
 
   return (
     <div>
@@ -262,9 +241,9 @@ const UserProfile = () => {
                     </div>
                   </div>
                 </Link>
-                <Link
-                  href="#"
-                  className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
+                <div
+                  className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group cursor-pointer"
+                  onClick={handleLogout}
                 >
                   <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 space-x-2 items-center">
                     <div>
@@ -288,7 +267,7 @@ const UserProfile = () => {
                         />
                       </svg>
                     </div>
-                    <div onClick={handleLogout}>
+                    <div>
                       <p className="font-bold text-base lg:text-lg text-slate-200 leading-4 group-hover:text-indigo-400">
                         Logout
                       </p>
@@ -297,220 +276,219 @@ const UserProfile = () => {
                       </p>
                     </div>
                   </div>
-                </Link>
+                </div>
               </div>
               <p className="text-sm text-center text-gray-600">
                 v1.0.0 | &copy; 2023 Kaveh RezaeiJAmi
               </p>
             </div>
-            
-
-
-
 
             <div id="content" className="bg-white/10 col-span-9 rounded-lg p-6">
-      {editMode ? (
-        <UserPersonalInfo />
-      ) : (
-        <div>
-          <div id="24h">
-            <h1 className="font-bold py-4 uppercase">Account Information</h1>
-            <div
-              id="stats"
-              className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
-              <div className="bg-black/60 hover:bg-white/10  to-white/5 p-6 rounded-lg">
-                <div className="flex flex-row space-x-4 items-center">
-                  <div id="stats-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="w-10 h-10 text-white"
+              {editMode ? (
+                <UserPersonalInfo />
+              ) : (
+                <div>
+                  <div id="24h">
+                    <h1 className="font-bold py-4 uppercase">
+                      Account Information
+                    </h1>
+                    <div
+                      id="stats"
+                      className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
-                      />
-                    </svg>
+                      <div className="bg-black/60 hover:bg-white/10  to-white/5 p-6 rounded-lg">
+                        <div className="flex flex-row space-x-4 items-center">
+                          <div id="stats-1">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth="1.5"
+                              stroke="currentColor"
+                              className="w-10 h-10 text-white"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <p className="text-indigo-400 font-bold text-xl inline-flex items-center space-x-2">
+                              <span>{userName}</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-black/60 hover:bg-white/10  p-6 rounded-lg">
+                        <div className="flex flex-row space-x-4 items-center">
+                          <div id="stats-1"></div>
+                          <div>
+                            <p className="text-indigo-400 font-bold text-xl inline-flex items-center space-x-2">
+                              <span>{userEmail}</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-indigo-400 font-bold text-xl inline-flex items-center space-x-2">
-                      <span>{userName}</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-black/60 hover:bg-white/10  p-6 rounded-lg">
-                <div className="flex flex-row space-x-4 items-center">
-                  <div id="stats-1"></div>
-                  <div>
-                    <p className="text-indigo-400 font-bold text-xl inline-flex items-center space-x-2">
-                      <span>{userEmail}</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="profile">
-            <h1 className="font-bold py-4 uppercase"></h1>
-            <div
-              id="stats"
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-            >
-              <div className="email-password bg-black/60 hover:bg-white/10 to-white/5 rounded-lg">
-                <div className="flex flex-row items-center">
-                  <div className=" p-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="32"
-                      width="36"
-                      viewBox="0 0 576 512"
-                    ></svg>
-                  </div>
-                  <div className="p-2">
-                    <p className="text-xl font-bold">
-                      Change Email and Password
-                    </p>
-                    {/* <p className="text-gray-500 font-medium">Maia Kipper</p>
+                  <div id="profile">
+                    <h1 className="font-bold py-4 uppercase"></h1>
+                    <div
+                      id="stats"
+                      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+                    >
+                      <div className="email-password bg-black/60 hover:bg-white/10 to-white/5 rounded-lg">
+                        <div className="flex flex-row items-center">
+                          <div className=" p-4">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="32"
+                              width="36"
+                              viewBox="0 0 576 512"
+                            ></svg>
+                          </div>
+                          <div className="p-2">
+                            <p className="text-xl font-bold">
+                              Change Email and Password
+                            </p>
+                            {/* <p className="text-gray-500 font-medium">Maia Kipper</p>
                 <p className="text-gray-500 text-sm">23 Nov 2022</p> */}
-                  </div>
-                </div>
-                <div className="border-t border-white/5 p-4">
-                  <a
-                    href="#"
-                    className="flex space-x-2 items-center text-center"
-                  >
-                    <Link
-                      // Handle click to show ResetPassword
-                      href={"/resetPassword"}
-                      className="hover:text-indigo-400"
-                    >
-                      password
-                    </Link>
+                          </div>
+                        </div>
+                        <div className="border-t border-white/5 p-4">
+                          <a
+                            href="#"
+                            className="flex space-x-2 items-center text-center"
+                          >
+                            <Link
+                              // Handle click to show ResetPassword
+                              href={"/resetPassword"}
+                              className="hover:text-indigo-400"
+                            >
+                              password
+                            </Link>
 
-                    <Link
-                      // Handle click to show ResetPassword
-                      href={"/changeEmail"}
-                      className="hover:text-indigo-400"
-                    >
-                      email
-                    </Link>
-                  </a>
-                </div>
-              </div>
+                            <Link
+                              // Handle click to show ResetPassword
+                              href={"/changeEmail"}
+                              className="hover:text-indigo-400"
+                            >
+                              email
+                            </Link>
+                          </a>
+                        </div>
+                      </div>
 
-              <div className="personal-info  bg-black/60 hover:bg-white/10  to-white/5 rounded-lg">
-                <div className="flex flex-row items-center">
-                  <div className=" p-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="32"
-                      width="36"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        fill="white"
-                        d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152zM432 224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm0 240a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm0-192c-8.8 0-16 7.2-16 16v80c0 8.8 7.2 16 16 16s16-7.2 16-16V288c0-8.8-7.2-16-16-16z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="p-2">
-                    <p className="text-xl font-bold">Personal Information</p>
-                    <p className="text-gray-500 font-medium">Oprah Milles</p>
-                    <p className="text-gray-500 text-sm">23 Nov 2022</p>
-                  </div>
-                </div>
-                <div className="border-t border-white/5 p-4">
-                  <button
-                    className="inline-flex space-x-2 items-center text-center"
-                    onClick={handleEditPersonalInfoClick}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
-                      />
-                    </svg>
-                    <span className="hover:text-indigo-400">click to edit</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            {/*Render UserInfoModal when showUserInfoModal is true */}
-            {showUserInfoModal && (
-              <UserInfoModal
-                onClose={() => setShowUserInfoModal(false)}
-                userId={userId}
-              />
-            )}
-          </div>
-          <div id="last-24-login">
-            <h1 className="font-bold py-4 uppercase">Last 24h Logins</h1>
-            <div className="overflow-x-scroll">
-              <table className="w-full whitespace-nowrap">
-                <thead className="bg-black/60">
-                  <th className="text-left py-3 px-2 rounded-l-lg">Name</th>
-                  <th className="text-left py-3 px-2">Email</th>
-                  <th className="text-left py-3 px-2">Group</th>
-                  <th className="text-left py-3 px-2">Status</th>
-                </thead>
-
-                <tr
-                  key={0}
-                  className="border-b hover:bg-white/10 border-gray-700"
-                >
-                  <td className="py-3 px-2 font-bold">
-                    <div className="inline-flex space-x-3 items-center">
-                      <span>
-                      
-                      </span>
-                      <span>{userName}</span>
+                      <div className="personal-info  bg-black/60 hover:bg-white/10  to-white/5 rounded-lg">
+                        <div className="flex flex-row items-center">
+                          <div className=" p-4">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="32"
+                              width="36"
+                              viewBox="0 0 576 512"
+                            >
+                              <path
+                                fill="white"
+                                d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152zM432 224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm0 240a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm0-192c-8.8 0-16 7.2-16 16v80c0 8.8 7.2 16 16 16s16-7.2 16-16V288c0-8.8-7.2-16-16-16z"
+                              />
+                            </svg>
+                          </div>
+                          <div className="p-2">
+                            <p className="text-xl font-bold">
+                              Personal Information
+                            </p>
+                            <p className="text-gray-500 font-medium">
+                              Oprah Milles
+                            </p>
+                            <p className="text-gray-500 text-sm">23 Nov 2022</p>
+                          </div>
+                        </div>
+                        <div className="border-t border-white/5 p-4">
+                          <button
+                            className="inline-flex space-x-2 items-center text-center"
+                            onClick={handleEditPersonalInfoClick}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth="1.5"
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                              />
+                            </svg>
+                            <span className="hover:text-indigo-400">
+                              click to edit
+                            </span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                  </td>
-                  <td className="py-3 px-2">{userEmail}</td>
-                  <td className="py-3 px-2">User</td>
-                  <td className="py-3 px-2">Approved</td>
-                </tr>
-                <tr
-                  key={1}
-                  className="border-b hover:bg-white/10 border-gray-700"
-                >
-                  <td className="py-3 px-2 font-bold">
-                    <div className="inline-flex space-x-3 items-center">
-                      <span>
-                       
-                      </span>
-                      <span>{userName}</span>
+                    {/*Render UserInfoModal when showUserInfoModal is true */}
+                    {showUserInfoModal && (
+                      <UserInfoModal
+                        onClose={() => setShowUserInfoModal(false)}
+                        userId={userId}
+                      />
+                    )}
+                  </div>
+                  <div id="last-24-login">
+                    <h1 className="font-bold py-4 uppercase">
+                      Last 24h Logins
+                    </h1>
+                    <div className="overflow-x-scroll">
+                      <table className="w-full whitespace-nowrap">
+                        <thead className="bg-black/60">
+                          <th className="text-left py-3 px-2 rounded-l-lg">
+                            Name
+                          </th>
+                          <th className="text-left py-3 px-2">Email</th>
+                          <th className="text-left py-3 px-2">Group</th>
+                          <th className="text-left py-3 px-2">Status</th>
+                        </thead>
+
+                        <tr
+                          key={0}
+                          className="border-b hover:bg-white/10 border-gray-700"
+                        >
+                          <td className="py-3 px-2 font-bold">
+                            <div className="inline-flex space-x-3 items-center">
+                              <span></span>
+                              <span>{userName}</span>
+                            </div>
+                          </td>
+                          <td className="py-3 px-2">{userEmail}</td>
+                          <td className="py-3 px-2">User</td>
+                          <td className="py-3 px-2">Approved</td>
+                        </tr>
+                        <tr
+                          key={1}
+                          className="border-b hover:bg-white/10 border-gray-700"
+                        >
+                          <td className="py-3 px-2 font-bold">
+                            <div className="inline-flex space-x-3 items-center">
+                              <span></span>
+                              <span>{userName}</span>
+                            </div>
+                          </td>
+                          <td className="py-3 px-2">{userEmail}</td>
+                          <td className="py-3 px-2">User</td>
+                          <td className="py-3 px-2">Approved</td>
+                        </tr>
+                      </table>
                     </div>
-                  </td>
-                  <td className="py-3 px-2">{userEmail}</td>
-                  <td className="py-3 px-2">User</td>
-                  <td className="py-3 px-2">Approved</td>
-                </tr>
-              </table>
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
-        </div>
-      )}
-    </div>
-
-
-
-
-
           </div>
         </div>
       </div>
@@ -519,13 +497,6 @@ const UserProfile = () => {
 };
 
 export default UserProfile;
-
-
-
-
-
-
-
 
 // const ProfileContent: React.FC = () => {
 //   const router = useRouter();
@@ -536,8 +507,6 @@ export default UserProfile;
 //   const [showUserInfoModal, setShowUserInfoModal] = useState(false);
 
 //    return (
-    
+
 //   );
 // };
-
-
