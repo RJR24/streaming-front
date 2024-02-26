@@ -233,9 +233,9 @@ const UserDashboard = () => {
                     </div>
                   </div>
                 </Link>
-                <Link
-                  href="#"
-                  className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group"
+                <div
+                  className="hover:bg-white/10 transition duration-150 ease-linear rounded-lg py-3 px-2 group cursor-pointer"
+                  onClick={handleLogout}
                 >
                   <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 space-x-2 items-center">
                     <div>
@@ -259,7 +259,7 @@ const UserDashboard = () => {
                         />
                       </svg>
                     </div>
-                    <div onClick={handleLogout}>
+                    <div>
                       <p className="font-bold text-base lg:text-lg text-slate-200 leading-4 group-hover:text-indigo-400">
                         Logout
                       </p>
@@ -268,7 +268,7 @@ const UserDashboard = () => {
                       </p>
                     </div>
                   </div>
-                </Link>
+                </div>
               </div>
               <p className="text-sm text-center text-gray-600">
                 v1.0.0 | &copy; 2023 Kaveh RezaeiJAmi
