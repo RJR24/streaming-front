@@ -12,9 +12,6 @@ import axios from "axios";
 
 
 
-const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-const tmdbUrl = process.env.NEXT_PUBLIC_API_TMDB_URL;
-
 
 interface User {
   _id: string;
@@ -29,9 +26,6 @@ const UsersManagement = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   
-  const [showUserInfoModal, setShowUserInfoModal] = useState(false);
-  const [userEmail, setUserEmail] = useState<string>("");
-  const [userId, setUserId] = useState<string>("");
   const [users, setUsers] = useState<User[]>([]);
   const [selectedUserId, setSelectedUserId] = useState<string | null>(null);
   const router = useRouter();
