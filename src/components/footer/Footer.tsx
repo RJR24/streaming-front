@@ -74,7 +74,7 @@ const Footer = () => {
             <a href="https://material-tailwind.com/">Designed by Kaveh</a>. All
             Rights Reserved.
           </Typography>
-          <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+          <div className="social-media flex gap-4 text-blue-gray-900 sm:justify-center">
             <Typography
               as="a"
               href="#"
